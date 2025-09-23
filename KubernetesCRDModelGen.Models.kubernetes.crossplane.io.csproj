@@ -2,5 +2,6 @@
   <PropertyGroup>
     <PackageId>KubernetesCRDModelGen.Models.kubernetes.crossplane.io</PackageId>
     <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.kubernetes.crossplane.io</RepositoryUrl>
+    <Description>C# models for Kubernetes CRDs in group kubernetes.crossplane.io</Description>
   </PropertyGroup>
 </Project>
