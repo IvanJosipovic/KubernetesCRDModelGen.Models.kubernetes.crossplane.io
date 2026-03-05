@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kubernetes.m.crossplane.io
   names:
+    kind: Object
     categories:
     - crossplane
     - managed
     - kubernetes
-    kind: Object
     listKind: ObjectList
     plural: objects
     singular: object

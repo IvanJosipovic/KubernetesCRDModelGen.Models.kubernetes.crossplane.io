@@ -15,11 +15,11 @@ spec:
       - v1
   group: kubernetes.crossplane.io
   names:
+    kind: Object
     categories:
     - crossplane
     - managed
     - kubernetes
-    kind: Object
     listKind: ObjectList
     plural: objects
     singular: object

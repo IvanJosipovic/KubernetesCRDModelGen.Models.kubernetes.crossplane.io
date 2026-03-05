@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kubernetes.m.crossplane.io
   names:
+    kind: ClusterProviderConfig
     categories:
     - crossplane
     - provider
     - kubernetes
-    kind: ClusterProviderConfig
     listKind: ClusterProviderConfigList
     plural: clusterproviderconfigs
     singular: clusterproviderconfig
