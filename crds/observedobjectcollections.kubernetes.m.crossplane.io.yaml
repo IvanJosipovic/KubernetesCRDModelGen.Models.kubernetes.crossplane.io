@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kubernetes.m.crossplane.io
   names:
+    kind: ObservedObjectCollection
     categories:
     - crossplane
     - managed
     - kubernetes
-    kind: ObservedObjectCollection
     listKind: ObservedObjectCollectionList
     plural: observedobjectcollections
     singular: observedobjectcollection
