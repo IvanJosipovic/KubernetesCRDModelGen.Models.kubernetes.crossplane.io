@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kubernetes.m.crossplane.io;
 /// <summary>A ObservedObjectCollection is a provider Kubernetes API type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ObservedObjectCollectionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ObservedObjectCollection>
@@ -33,11 +33,11 @@ public partial class V1alpha1ObservedObjectCollectionList : IKubernetesObject<V1
 
     /// <summary>List of V1alpha1ObservedObjectCollection objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha1ObservedObjectCollection>? Items { get; set; }
+    public required IList<V1alpha1ObservedObjectCollection> Items { get; set; }
 }
 
 /// <summary>Objects metadata</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionSpecObjectTemplateMetadata
 {
@@ -51,7 +51,7 @@ public partial class V1alpha1ObservedObjectCollectionSpecObjectTemplateMetadata
 }
 
 /// <summary>Template when defined is used for creating Object instances</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionSpecObjectTemplate
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1ObservedObjectCollectionSpecObjectTemplate
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionSpecObserveObjectsSelectorMatchExpressions
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1ObservedObjectCollectionSpecObserveObjectsSelectorM
 }
 
 /// <summary>Selector defines the criteria for including objects into the collection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionSpecObserveObjectsSelector
 {
@@ -111,7 +111,7 @@ public partial class V1alpha1ObservedObjectCollectionSpecObserveObjectsSelector
 /// ObserveObjects declares what criteria object need to fulfil
 /// to become a member of this collection
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionSpecObserveObjects
 {
@@ -141,7 +141,7 @@ public partial class V1alpha1ObservedObjectCollectionSpecObserveObjects
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionSpecProviderConfigRef
 {
@@ -155,7 +155,7 @@ public partial class V1alpha1ObservedObjectCollectionSpecProviderConfigRef
 }
 
 /// <summary>ObservedObjectCollectionSpec defines the desired state of ObservedObjectCollection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionSpec
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1ObservedObjectCollectionSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionStatusConditions
 {
@@ -223,7 +223,7 @@ public partial class V1alpha1ObservedObjectCollectionStatusConditions
 }
 
 /// <summary>ObservedObjectCollectionStatus represents the observed state of a ObservedObjectCollection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ObservedObjectCollectionStatus
 {
@@ -248,7 +248,7 @@ public partial class V1alpha1ObservedObjectCollectionStatus
 }
 
 /// <summary>A ObservedObjectCollection is a provider Kubernetes API type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ObservedObjectCollection : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ObservedObjectCollectionSpec>, IStatus<V1alpha1ObservedObjectCollectionStatus?>
