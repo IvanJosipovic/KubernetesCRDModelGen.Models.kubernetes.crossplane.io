@@ -115,11 +115,28 @@ public enum V1alpha2ObjectSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>Deletion policy for created kubernetes object, defaults to Background</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ObjectSpecForProviderDeletionPropagationPolicyEnum>))]
+public enum V1alpha2ObjectSpecForProviderDeletionPropagationPolicyEnum
+{
+    [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
+    Orphan,
+    [EnumMember(Value = "Background"), JsonStringEnumMemberName("Background")]
+    Background,
+    [EnumMember(Value = "Foreground"), JsonStringEnumMemberName("Foreground")]
+    Foreground
+}
+
 /// <summary>ObjectParameters are the configurable fields of a Object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ObjectSpecForProvider
 {
+    /// <summary>Deletion policy for created kubernetes object, defaults to Background</summary>
+    [JsonPropertyName("deletionPropagationPolicy")]
+    public V1alpha2ObjectSpecForProviderDeletionPropagationPolicyEnum? DeletionPropagationPolicy { get; set; }
+
     /// <summary>Raw JSON representation of the kubernetes object to be created.</summary>
     [JsonPropertyName("manifest")]
     public required JsonNode Manifest { get; set; }
